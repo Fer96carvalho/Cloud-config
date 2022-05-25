@@ -1,0 +1,5 @@
+server:
+  port: $(PORT:6666)
+  
+message: Configuração cetralizada com spring cloud config..
+
