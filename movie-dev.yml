@@ -1,12 +1,2 @@
-datasource:
-  driver:
-    class:
-    name: com.mysql.cj.jdbc.Driver
-  username: username
-    url: jdbc:mysql://localhost:3306/aula10
-    password: password
-jpa:
-  hibernate:
-    ddl-auto: update
 server:
   port: 8082
