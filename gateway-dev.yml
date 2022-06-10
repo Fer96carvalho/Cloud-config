@@ -5,10 +5,7 @@ spring:
     gateway:
       routes:
         - id: movieRoute
-          uri: lb://MOVIE
+          uri: lb://MOVIE-SERVICE
           predicates:
-           - Path=/movie/**
-        - id: catalogRoute
-          uri: lb://CATALOG
-          predicates:
-           - Path=/CATALOG/**
+           - Path=/movies/**
+        
