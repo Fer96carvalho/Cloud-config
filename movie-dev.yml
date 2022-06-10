@@ -3,8 +3,8 @@ server:
 spring:
     datasource:
         username: root
-        password: ${DATA_BASE_PASSWORD:Cgx1123581321}
-        url: jdbc:mysql://localhost:3306/movie
+        password: ${DATA_BASE_PASSWORD}
+        url: jdbc:mysql://localhost:3306/DatabaseProva
     jpa:
       hibernate:
         ddl-auto: update
