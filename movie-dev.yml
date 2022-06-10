@@ -4,7 +4,7 @@ spring:
     datasource:
         username: root
         password: ${DATA_BASE_PASSWORD}
-        url: jdbc:mysql://localhost/3306/ProvaBackend
+        url: jdbc:mysql://localhost/3306/provabackend
     jpa:
       hibernate:
         ddl-auto: update
