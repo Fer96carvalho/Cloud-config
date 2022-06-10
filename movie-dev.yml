@@ -2,7 +2,7 @@ server:
   port: 8082
 spring:
     datasource:
-        username: provaback
+        username: root
         password: ${DATA_BASE_PASSWORD}
         url: jdbc:mysql://localhost/3306/ProvaBackend
     jpa:
