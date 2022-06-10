@@ -2,9 +2,9 @@ server:
   port: 8082
 spring:
     datasource:
-        username: ${DATABASE_USER:root}
+        username: root
         password: ${DATA_BASE_PASSWORD}
-        url: ${DATA_BASE_URL:jdbc:mysql://localhost/3306/ProvaBackend}
+        url: jdbc:mysql://localhost/3306/ProvaBackend
     jpa:
       hibernate:
         ddl-auto: update
