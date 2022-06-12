@@ -1,7 +1,7 @@
-package Service;
+package com.prova.movie.Service;
 
-import Entity.Movies;
-import Repository.MoviesRepository;
+import com.prova.movie.Entity.Movies;
+import com.prova.movie.Repository.MoviesRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

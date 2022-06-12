@@ -1,6 +1,6 @@
-package Controller;
+package com.prova.catalog.Controller;
 
-import Service.ICatalog;
+import com.prova.catalog.Service.ICatalog;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

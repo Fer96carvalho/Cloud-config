@@ -1,6 +1,6 @@
-package Service;
+package com.prova.movie.Service;
 
-import Entity.Movies;
+import com.prova.movie.Entity.Movies;
 
 import java.util.List;
 

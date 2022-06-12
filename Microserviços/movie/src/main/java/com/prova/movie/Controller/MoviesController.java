@@ -1,7 +1,7 @@
-package Controller;
+package com.prova.movie.Controller;
 
-import Entity.Movies;
-import Service.IMovies;
+import com.prova.movie.Entity.Movies;
+import com.prova.movie.Service.IMovies;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -18,12 +18,12 @@ public class MoviesController {
 
     @PostMapping
     public ResponseEntity<Object> save(@RequestBody() Movies movies){
-        iMovies.save(movies);
+        this.iMovies.save(movies);
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
 
     @GetMapping("/{genre}")
     public List<Movies> findMovie(@PathVariable String genre){
-        return iMovies.findByGenre(genre);
+       return this.iMovies.findByGenre(genre);
     }
 }

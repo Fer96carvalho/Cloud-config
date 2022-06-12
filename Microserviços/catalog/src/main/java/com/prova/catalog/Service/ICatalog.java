@@ -1,4 +1,4 @@
-package Service;
+package com.prova.catalog.Service;
 
 import java.util.List;
 

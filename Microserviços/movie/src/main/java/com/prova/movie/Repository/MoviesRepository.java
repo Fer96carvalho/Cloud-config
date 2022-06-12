@@ -1,6 +1,6 @@
-package Repository;
+package com.prova.movie.Repository;
 
-import Entity.Movies;
+import com.prova.movie.Entity.Movies;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
