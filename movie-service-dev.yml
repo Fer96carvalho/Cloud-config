@@ -3,7 +3,7 @@ server:
 spring:
     datasource:
         username: root
-        password: ${DATA_BASE_PASSWORD:Cgx1123581321}
+        password: ${DATA_BASE_PASSWORD}
         url: "jdbc:mysql://localhost:3306/provajava"
     jpa:
       hibernate:
