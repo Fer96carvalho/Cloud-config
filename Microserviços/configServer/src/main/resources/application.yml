@@ -8,3 +8,12 @@ spring:
       server:
         git:
           uri: https://github.com/Fer96carvalho/Cloud-config
+          
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://eureka-service:8761/eureka/
