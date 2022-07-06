@@ -3,7 +3,19 @@ spring:
     name: movie-service
   config:
     import: optional:configserver:http://localhost:8888
+  zipkin:
+    base-url: http://zipkin-service:9411/
   cloud:
     config:
       profile: dev
+      
+      
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://eureka-service:8761/eureka/
 
