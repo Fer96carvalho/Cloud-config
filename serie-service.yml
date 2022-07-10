@@ -1,0 +1,44 @@
+
+  rabbitmq:
+    username: guest
+    password: guest
+    host: rabbitmq-service
+    port: 5672
+  zipkin:
+    base-url: http://zipkin-service:9411/
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    url: "jdbc:mysql://localhost:3306/provajava?createDatabaseIfNotExist=true"
+    password: ${DATA_BASE_PASSWORD:Cgx1123581321}
+  jpa:
+    generate-ddl: true
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    format-sql: true
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+eureka:
+  instance:
+    hostname: serie-service
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+mensagem: Testando
+
+management:
+  info:
+    env:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: health,info
