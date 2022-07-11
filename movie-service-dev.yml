@@ -1,10 +1,33 @@
 server:
   port: 8002
+  
 spring:
-    datasource:
-        username: root
-        password: ${DATA_BASE_PASSWORD:Cgx1123581321}
-        url: "jdbc:mysql://localhost:3306/provajava?createDatabaseIfNotExist=true"
-    jpa:
-      hibernate:
-        ddl-auto: update
+  datasource:
+      username: root
+      password: ${DATA_BASE_PASSWORD:Cgx1123581321}
+      url: "jdbc:mysql://localhost:3306/provajava?createDatabaseIfNotExist=true"
+  jpa:
+    hibernate:
+      ddl-auto: update
+      
+  rabbitmq:
+    username: guest
+    password: guest
+    host: rabbitmq-service
+    port: 5672
+  zipkin:
+    base-url: http://zipkin-service:9411/
+  cloud:
+    config:
+      profile: dev
+queue:
+  movie:
+    name: serieQueue
+eureka:
+  instance:
+    hostname: movie-service
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
