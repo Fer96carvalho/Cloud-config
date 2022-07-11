@@ -3,9 +3,9 @@ server:
   
 spring:
   datasource:
-      username: root
-      password: ${DATA_BASE_PASSWORD:Cgx1123581321}
-      url: "jdbc:mysql://localhost:3306/provajava?createDatabaseIfNotExist=true"
+    username: root
+    password: ${DATA_BASE_PASSWORD:Cgx1123581321}
+    url: "jdbc:mysql://localhost:3306/provajava?createDatabaseIfNotExist=true"
   jpa:
     hibernate:
       ddl-auto: update
