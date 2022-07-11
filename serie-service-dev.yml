@@ -10,10 +10,10 @@ spring:
   zipkin:
     base-url: http://zipkin-service:9411/
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    username: root
-    url: "jdbc:mysql://localhost:3306/provajava?createDatabaseIfNotExist=true"
-    password: ${DATA_BASE_PASSWORD:Cgx1123581321}
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: root
+      url: "jdbc:mysql://localhost:3306/provajava?createDatabaseIfNotExist=true"
+      password: ${DATA_BASE_PASSWORD:Cgx1123581321}
   jpa:
     generate-ddl: true
     database-platform: org.hibernate.dialect.H2Dialect
