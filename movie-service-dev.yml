@@ -2,8 +2,8 @@ server:
   port: 8002
 spring:
     datasource:
-        username: user
-        password: ${DATA_BASE_PASSWORD:password}
+        username: root
+        password: ${DATA_BASE_PASSWORD:Cgx1123581321}
         url: "jdbc:mysql://localhost:3306/provajava?createDatabaseIfNotExist=true"
     jpa:
       hibernate:
