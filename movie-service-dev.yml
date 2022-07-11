@@ -10,6 +10,9 @@ spring:
     hibernate:
       ddl-auto: update
       
+  cloud:
+    config:
+      profile: dev
   rabbitmq:
     username: guest
     password: guest
@@ -17,17 +20,36 @@ spring:
     port: 5672
   zipkin:
     base-url: http://zipkin-service:9411/
-  cloud:
-    config:
-      profile: dev
-queue:
-  movie:
-    name: serieQueue
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    url: "jdbc:mysql://localhost:3306/provajava?createDatabaseIfNotExist=true"
+    password: ${DATA_BASE_PASSWORD:Cgx1123581321}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    format-sql: true
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
 eureka:
   instance:
-    hostname: movie-service
+    hostname: serie-service
   client:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+
+management:
+  info:
+    env:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
